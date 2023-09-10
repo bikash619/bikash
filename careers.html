@@ -27,10 +27,70 @@
 
 
   <link href="assets/css/style.css" rel="stylesheet">
+<style>
+  /* Add these styles to your CSS file */
+
+/* Style for the card container */
+#career
+{
+  height: 700px;
+}
+.card {
+  border: 1px solid #150224;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-top:150px;
+}
+
+/* Style for the card title */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Style for the card text */
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Style for the "Apply Now" button */
+.btn-primary {
+  background-color: #007bff;
+  color: #520505;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the "Apply Now" button */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+</style>
 
 </head>
 
 <body>
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+  
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center"><span>(210) 232 - 3642</span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+        </div>
+      </div>
+    </div>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
@@ -41,11 +101,10 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="inner-page.html">About</a></li>
           <li><a class="nav-link scrollto" href="business.html">Our Business</a></li>
           <li><a class="nav-link scrollto" href="partners.html">Partners</a></li>
-          <li><a class="nav-link scrollto" href="#events">Career</a></li>
+          <li><a class="nav-link scrollto" href="careers.html">Career</a></li>
           <li><a class="nav-link scrollto" href="#chefs"></a></li>
           <li><a class="nav-link scrollto" href="media.html">Media</a></li>
 
@@ -55,43 +114,28 @@
       <i class="bi bi-list mobile-nav-toggle"></i>
     </div>
   </header><!-- End Header -->
-
-  <section id="career" class="career">
+  <section id="career" class="py-5">
     <div class="container">
-      <div class="section-title">
-        <h2>Career Opportunities</h2>
-      </div>
-
       <div class="row">
-        <div class="col-lg-8">
-          <div class="career-content">
-            <h3>Business Development Manager</h3>
-            <p>Jawhara Invest Company is seeking a highly motivated Business Development Manager to join our team. If you are passionate about driving growth and creating new business opportunities, we want to hear from you.</p>
-
-            <h4>Responsibilities:</h4>
-            <ul>
-              <li>Identify and develop new business opportunities.</li>
-              <li>Build and maintain strong client relationships.</li>
-              <li>Develop and implement growth strategies.</li>
-              <li>Analyze market trends and competitor activity.</li>
-              <li>Collaborate with cross-functional teams.</li>
-            </ul>
-
-            <h4>Requirements:</h4>
-            <ul>
-              <li>Bachelor's degree in Business or related field.</li>
-              <li>Proven experience in business development.</li>
-              <li>Excellent communication and negotiation skills.</li>
-              <li>Strong analytical and problem-solving abilities.</li>
-              <li>Ability to work independently and in a team.</li>
-            </ul>
-
-            <p>If you are ready to take on this exciting opportunity and contribute to our company's success, please send your resume and cover letter to <a href="mailto:careers@jawharainvest.com">careers@jawharainvest.com</a>.</p>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Business Development Manager</h5>
+              <p class="card-text">We are looking for a Business Development Manager to join our team. If you are passionate about business growth and have a proven track record in sales and development, we'd love to hear from you.</p>
+              <a href="mailto:your-email@example.com" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="career-image">
           </div>
         </div>
       </div>
     </div>
   </section>
+  
+  
+
 
   
 

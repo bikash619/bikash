@@ -27,10 +27,107 @@
 
 
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>/* Style the container */
+    #why-us {
+      background-image: radial-gradient(74% 99% at 50% 50%, rgb(39, 3, 37) 1%, rgb(11, 1, 6) 45%);
+      padding: 60px 0;
+    }
+    
+    /* Style the section title */
+    #why-us .section-title p {
+      font-size: 18px;
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+    
+    #why-us .section-title h3 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #9399b9;
+    }
+    
+    /* Style the boxes */
+    #why-us .box {
+      position: relative;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    #why-us .box:hover {
+      transform: translateY(-10px);
+    }
+    
+    #why-us .box:hover::before {
+      opacity: 0;
+    }
+    
+    #why-us .box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 10px;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    /* Style the box images */
+    #why-us .box img {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-image: radial-gradient(74% 99% at 50% 50%, rgb(39, 3, 37) 1%, rgb(11, 1, 6) 45%); 
+    }
+    
+    /* Style the box number */
+    #why-us .box span {
+      display: block;
+      font-size: 24px;
+      color: #3498db;
+      text-align: center;
+    }
+    
+    /* Style the box title */
+    #why-us .box h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin-top: 15px;
+    }
+    
+    /* Add some responsive styles */
+    @media (max-width: 768px) {
+      #why-us .box {
+        text-align: center;
+      }
+    
+      #why-us .box img {
+        margin: 0;
+      }
+    }
+    </style>
 
 </head>
 
 <body>
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+  
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center"><span>(210) 232 - 3642</span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+        </div>
+      </div>
+    </div>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
@@ -41,11 +138,10 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
           <li><a class="nav-link scrollto" href="inner-page.html">About</a></li>
           <li><a class="nav-link scrollto" href="business.html">Our Business</a></li>
           <li><a class="nav-link scrollto" href="partners.html">Partners</a></li>
-          <li><a class="nav-link scrollto" href="#events">Career</a></li>
+          <li><a class="nav-link scrollto" href="careers.html">Career</a></li>
           <li><a class="nav-link scrollto" href="#chefs"></a></li>
           <li><a class="nav-link scrollto" href="media.html">Media</a></li>
 
@@ -55,98 +151,72 @@
       <i class="bi bi-list mobile-nav-toggle"></i>
     </div>
   </header><!-- End Header -->
-
-
-  <section id="menu" class="menu section-bg">
+  <section id="why-us" class="why-us">
     <div class="container" data-aos="fade-up">
-
       <div class="section-title">
-        
-        <p>Check Our Company</p>
+        <p>Our Business</p>
+        <h3>This section contains everything about our business.
+          Have a close visit to every pages for details information.
+        </h3>
       </div>
-
-      <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="menu-flters">
-            <li data-filter="*" class="filter-active">CONSTRUCTION & ENGINEERING</li>
-            <li data-filter=".filter-starters">RECRUITMENT</li>
-            <li data-filter=".filter-salads">SALES REPRESENTATIVE</li>
-            <li data-filter=".filter-specialty">INFORMATION, TECHNOLOGY & INNOVATION</li>
-          </ul>
+  
+      <div class="row">
+        <div class="col-lg-3">
+          <a href="engineer.html">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100" style="height: 300px; background-image: url('path-to-image-1.jpg'); background-size: cover; background-position: center;">
+              <img src="assets/img/engineering_and_construction-removebg-preview.png" alt="" style="width: 100px; height: 100px;">
+              <span>01</span>
+              <h4>Engineering and Construction</h4>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col-lg-3">
+          <a href="recruitment.html">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200" style="height: 300px; background-image: url('path-to-image-2.jpg'); background-size: cover; background-position: center;">
+              <img src="assets/img/recruitment-removebg-preview.png" alt="" style="width: 100px; height: 100px;">
+              <span>02</span>
+              <h4>Recruitment</h4>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col-lg-3">
+          <a href="sales.html">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300" style="height: 300px; background-image: url('path-to-image-3.jpg'); background-size: cover; background-position: center;">
+              <img src="assets/img/sales_representative-removebg-preview.png" alt="" style="width: 100px; height: 100px;">
+              <span>03</span>
+              <h4>Sales Representative</h4>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col-lg-3">
+          <a href="innovation.html">
+            <div class="box" data-aos="zoom-in" data-aos-delay="400" style="height: 300px; background-image: url('path-to-image-4.jpg'); background-size: cover; background-position: center;">
+              <img src="assets/img/innovation-removebg-preview.png" alt="" style="width: 100px; height: 100px;">
+              <span>04</span>
+              <h4>Innovation and Information Technology</h4>
+            </div>
+          </a>
         </div>
       </div>
-
-      <!-- Define the content that should appear when links are clicked -->
-      <div id="content-construction" class="hidden-content">
-        <h3>Engineering and Construction</h3>
-        <img src="assets/img/engineer.jpg" alt="Construction Image">
-        <p>We are delighted to announce our partnership with prestigious construction companies, both domestically and globally. Our affiliations bring a wealth of expertise, experience, and resources to the table, ensuring that we provide you with the highest standards of quality and excellence.</p>
-        <ul>
-          <li>Real Estate projects</li>
-          <li>Power projects</li>
-          <li>Water treatment and Sanitation projects</li>
-          <li>Transmission and Distribution projects</li>
-          <li>Railway and Metro projects</li>
-          <li>Highway and Bridge projects</li>
-          <li>Airport projects</li>
-          <li>Hospital, Buildings, and Malls</li>
-          <li>Port, Industrial park, and Factories</li>
-          <li>Telecom sector</li>
-        </ul>
+    </div>
+  </section><!-- End Why Us Section -->
+  <section id="after">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <a href="inner-page.html" class="btn btn-primary">Learn More</a>
+        </div>
       </div>
-      
-      <div id="content-recruitment" class="hidden-content">
-        <h3>Recruitment</h3>
-        <img src="assets/img/recruit.jpg" alt="Recruitment Image">
-        <p>Our recruitment services, specializing in sourcing unskilled, skilled, and dedicated manpower from Nepal and South Asia. We take pride in connecting Saudi employers with exceptional talent, ensuring a seamless recruitment process and meeting the workforce needs of various industries.</p>
-        <p>Partner with us to access experience a seamless recruitment process, exceptional talent, and a committed team dedicated to meeting your manpower needs. Contact us today to discuss your requirements and embark on a successful recruitment journey.</p>
-        <h4>We specialize in recruiting for the following sectors:</h4>
-        <ul>
-          <li>Aviation</li>
-          <li>Construction & Civil Engineering</li>
-          <li>MEP & Electromechanical</li>
-          <li>General Cleaning & Facility Management</li>
-          <li>Retails (Sales & Customer Services)</li>
-          <li>Healthcare & Pharmacy</li>
-          <li>Hospitality, Tourism & Catering services</li>
-          <li>Information Technology & Telecommunications</li>
-          <li>Transportation</li>
-          <li>Banks & Financial services</li>
-          <li>Security Services</li>
-        </ul>
-      </div>
-      
-      <div id="content-sales" class="hidden-content">
-        <h3>Sales Representative</h3>
-        <img src="assets/img/sales.jpg" alt="Sales Image">
-        <p>China Resources Cement Holdings Limited (CR Cement)</p>
-      </div>
-      
-      <div id="content-technology" class="hidden-content">
-        <h3>Information Technology & Telecommunications</h3>
-        <img src="assets/img/iti.jpg" alt="Technology Image">
-        <p>Our Information Technology and Telecommunications division is committed to providing cutting-edge solutions and services to meet the evolving technology needs of our clients. We offer a wide range of IT and telecom services to enhance your business operations.</p>
-        <h4>Our IT and Telecom Services Include:</h4>
-        <ul>
-          <li>Network Infrastructure Design and Management</li>
-          <li>Cloud Computing Solutions</li>
-          <li>Cybersecurity Services</li>
-          <li>Unified Communications</li>
-          <li>Software Development and Customization</li>
-          <li>IT Support and Maintenance</li>
-          <li>Telecommunication Services</li>
-          <li>Data Management and Analytics</li>
-          <li>Internet of Things (IoT) Solutions</li>
-          <li>Digital Transformation Consultation</li>
-        </ul>
-        <p>Partner with us to leverage the power of technology for your business success. Contact our IT and Telecom experts to discuss your specific requirements and explore innovative solutions.</p>
-      </div>
-      
-      
-      
-
     </div>
   </section>
+  
+  
+  
+  
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
